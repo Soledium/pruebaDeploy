@@ -82,3 +82,7 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
+  development:
+  adapter: postgresql
+  database: deploy
+  pool: 5
